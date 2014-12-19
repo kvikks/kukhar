@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Портфолио</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="styles/reset.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+<link rel="stylesheet" type="text/css" href="styles/portfolio.css">
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/js_portfolio.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="header">
+		<a href="http://loftschool.ru/" target="_blank"><img src="images/logo.png" alt="Loftschool"></a>
+		<ul class="navlist">
+			<li class="vkontakte"><a href="https://vk.com/victoria_sheldon_cooper" target="_blank"></a></li>
+			<li class="twitter"><a href="https://twitter.com/Victoria_Kukhar" target="_blank"></a></li>
+			<li class="facebook"><a href="#" title="Не пользуюсь Facebook"></a></li>
+			<li class="github"><a href="https://github.com/kvikks" target="_blank"></a></li>
+		</ul>
+	</div>
+    <div class="line_color"></div>
+    <div class="background">
+    	<div class="content">
+			<div class="aside">
+            	<ul class="main_menu">
+                	<a href="index.html"><li>Обо мне</li></a>
+                    <a href="portfolio.html"><li class="first">Мои работы</li></a>
+                    <a href="feedback.html"><li>Связаться со мной</li></a>
+                </ul>
+                <ul class="contacts">
+                	<li>Контакты</li>
+                    <li class="mail"><img src="images/mail.png"><a href="mailto:kv.responder@yandex.ru">kv.responder@yandex.ru</a></li>
+                    <li class="tel"><img src="images/tel.png"><a href="skype:[+38(063)6268137]?call">+38 (063) 6268137</a></li>
+                    <li class="skype"><img src="images/skype.png"><a href="skype:[student_nloshnik skype]">student_nloshnik</a></li>
+                </ul>
+            </div>
+			<div class="article">                      
+               <p class="title">Мои работы</p>
+               <ul class="works">
+               		<li><p class="pic1"><span>BestGames</span></p><a href="#" title="Ссылки нет">BestGames</a><br>Учебная верстка.<br>Первый проект.</li>
+                    <li><p class="pic2"><span>LoremIpsum</span></p><a href="#" title="Ссылки нет">LoremIpsum</a><br>Учебная верстка.<br>Макет взят из сайта <a href="http://www.coolwebmasters.com/"><span>coolwebmasters.</span></a></li>
+               		<li><p class="pic3"><span>Cars</span></p><a href="#" title="Ссылки нет">Cars</a><br>Учебная верстка.<br>Первый проект.<br>Одна страница</li>
+                    <a href="#" id="addProject"><li class="add"><img src="images/add_pro.png" alt="House_icon">Добавить проект</li></a>
+               </ul>
+            </div>
+		</div>
+    </div> 
+    <div class="line_color"></div>
+	<div class="footer">
+		<p>© 2014. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+	</div>
+<!--Здесь находится модальное окно-->
+    <div id="modalWindow">
+    	<p class="addPro">Добавление проекта</p>
+    	<span id="modalClose"></span>
+    <p class="block">Название проекта<input type="text" maxlength="40" name="mod_name" placeholder="Введите название" required ></p>
+    <p class="block">Картинка
+    	<input class="file_input_text" name="mod_img_text" id="fileName" placeholder="Загрузите изображение" readonly><p class="file_input_box"></p>
+        <input type="file" name="mod_image" required class="file_input"></p>
+    <p class="block">URL проекта<input type="url" name="mod_url" placeholder="Добавьте ссылку" required></p>
+    <p class="block">Описание<textarea name="mod_text" placeholder="Пара слов о Вашем проекте"></textarea></p>
+    <button type="submit">Добавить</button>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>

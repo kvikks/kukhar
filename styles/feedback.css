@@ -1,0 +1,115 @@
+/*Изменяющаяся часть на каждой странице*/
+.aside .main_menu .first{
+	height: 50px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #3ba8c0;
+	color: #f9fafb;
+}
+/***************************************/
+.article{
+	border-radius: 5px;
+	background-color: #eff3f7;
+}
+.article .head{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 73px;
+	padding-top: 48px;
+	background-color: #48cbe8;
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 48px;
+	border-bottom: 17px solid #67dffa;
+}
+/*Форматирование элементов формы*/
+.form{
+	width: 436px;
+	margin-left: 123px;
+	font-family: 'fira_sanslight';
+	font-size: 19px;
+	color: #959aa8;
+}
+.form input, textarea{
+	display: block;
+	background-color: #fbfcfd;
+	border: solid 1px #48cbe8;
+	border-radius: 3px;
+}
+.form .text, .email{
+	width: 192px;
+	height: 38px;
+	margin-bottom: 14px;
+}
+.form .name, .button{
+	float: left;
+}
+.form .name{
+	margin-right: 14px;
+}
+.form input[placeholder], textarea[placeholder]{
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	color: #5acee9;
+	text-indent: 5px;
+}
+.form textarea{
+	padding-top: 5px;
+	padding-left: 1px;
+}
+.form .comment{
+	resize: none;
+	min-width: 399px;
+	min-height: 172px;
+	overflow: hidden;
+	margin-top: 4px;
+	margin-bottom: 14px;
+}
+.form .capcha{
+	width: 191px;
+	height: 73px;
+	float: left;
+	margin-top: 4px;
+	margin-bottom: 14px;
+	margin-right: 16px;	
+}
+.form .code{
+	width: 192px;
+	height: 30px;	
+	margin-top: 23px;
+	margin-bottom: 55px;
+}
+.form button{
+	width: 137px;
+	height: 31px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: #FFF;
+	padding-left: 22px;
+	padding-right: 22px;
+	margin-bottom: 35px;
+}
+.submit{
+	background-color: #48cbe8;
+	border-radius: 3px;
+	border: solid 1px #48cbe8;
+	margin-right: 123px;
+	box-shadow: 0px 2px 0px #3ba8c0;
+}
+.reset{
+	background-color: #849db5;
+	border-radius: 3px;
+	border: solid 1px #849db5;
+	box-shadow: 0px 2px 0px #687b8f;
+}
+.submit:hover, .reset:hover{
+	box-shadow: none;
+}
+.submit:active{
+	box-shadow: 0px -2px 0px #3ba8c0;
+}
+.reset:active{
+	box-shadow: 0px -2px 0px #687b8f;
+}

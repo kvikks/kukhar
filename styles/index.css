@@ -1,0 +1,106 @@
+/*Изменяющаяся часть на каждой странице*/
+.aside .main_menu .first{
+	height: 50px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #3ba8c0;
+	color: #f9fafb;
+}
+/***************************************/
+/*Блок основной информации*/
+.article .basic, .exp{
+	background-color: #eff3f7;
+	border-radius: 5px;	
+}
+.article .basic{
+	height: 324px;
+	margin-bottom: 25px;
+}
+.article .title{
+	display: inline-block;
+	float: left;
+	padding: 18px;
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	color: #3ba8c0;
+	border-bottom: solid 2px #3ba8c0;
+	margin-bottom: 20px;
+}
+.article .after{
+	content: ".";
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.basic img{
+	float: left;
+	margin-left: 21px;
+	margin-right: 38px;
+	width: 199px;
+	height: 198px;
+}
+.basic .text{
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	color: #37424d;
+	line-height: 37px;
+}
+.basic .text span{
+	font-family: 'fira_sansmedium';
+	font-size: 17px;
+	color: #4a545d;
+	margin-right: 8px;
+}
+.basic .skill{
+	float: left;
+}
+.basic ul{
+	list-style-type: none;
+	font-family: 'fira_sansbook';
+}
+.basic ul li{
+	display: inline-block;
+	height: 17px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-top: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-image: url(../images/skill.png);
+	border-radius: 3px;
+	font-family: 'proxima_nova_condensedSBd';
+	font-size: 14px;
+	color: #FFF;
+}
+/*Опыт работы и образование*/
+.article .exp{
+	height: 234px;
+	margin-bottom: 24px;
+}
+.article .exp .title{
+/*	width: 172px;*/
+	margin-bottom: 35px;
+}
+.exp img{
+	float: left;
+	margin-left: 65px;
+	margin-right: 31px;	
+}
+.exp p{
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	color: #4a545d;	
+}
+.exp span{
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	color: #687078;
+}
+.exp .text{
+	margin-bottom: 25px;
+}
+/*Образование*/
+.exp .course{
+	margin-left: 71px;
+	margin-right: 39px;	
+}

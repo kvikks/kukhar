@@ -1,0 +1,247 @@
+/*Изменяющаяся часть на каждой странице*/
+.aside .main_menu .first{
+	height: 50px;
+	background-color: #3ba8c0;
+	color: #f9fafb;
+}
+/***************************************/
+.article{
+	border-radius: 5px;
+	background-color: #eff3f7;
+}
+
+.article .title{
+	display: inline-block;
+	padding: 18px;
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	color: #3ba8c0;
+	border-bottom: solid 2px #3ba8c0;
+	margin-bottom: 33px;
+}
+/*Портфолио*/
+.article ul{
+	padding: 0;
+}
+.article ul li{
+	width: 181px;
+	float: left;
+	list-style: none;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 48px;
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	text-align: center;
+}
+/*Изображения и анимация*/
+.works .pic1{
+	width: 181px;
+	height: 127px;
+	border: solid 1px #3ba8c0;
+	border-radius: 3px;
+	margin-bottom: 7px;
+	background-image: url(../images/pic1.jpg);
+}
+.works .pic1 span, .pic2 span, .pic3 span{
+	display: inline-block;
+    font-family: 'fira_sansbook';
+	font-size: 12px;
+	color: #eff3f7;
+	border: 3px solid #eff3f7;
+	border-radius: 8px;
+	padding: 3px;
+	margin-top: 50px;
+	opacity: 0;	
+}
+.works .pic1:hover{
+	cursor: pointer;
+	background-image: url(../images/pic1_hover.jpg);
+}
+.works .pic2{
+	width: 181px;
+	height: 127px;
+	border: solid 1px #3ba8c0;
+	border-radius: 3px;
+	margin-bottom: 7px;
+	background-image: url(../images/pic2.jpg);
+}
+.works .pic2:hover{
+	cursor: pointer;
+	background-image: url(../images/pic2_hover.jpg);
+}
+.works .pic3{
+	width: 181px;
+	height: 127px;
+	border: solid 1px #3ba8c0;
+	border-radius: 3px;
+	margin-bottom: 7px;
+	background-image: url(../images/pic3.jpg);
+}
+.works .pic3:hover{
+	cursor: pointer;
+	background-image: url(../images/pic3_hover.jpg);
+}
+/****************************/
+.works li a{
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	color: #4eaec4;
+	text-decoration: none;
+}
+.works li, a span{
+	color: #4a545d;
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+}
+.works a span:hover{
+	text-decoration: underline;
+}
+.works .add{
+	height: 127px;
+	border: 1px dashed #3ba8c0;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #4eaec4;
+	text-align: center;
+}
+.works .add img{
+	width: 32px;
+	height: 32px;
+	display: block;
+	margin: 34px 75px 15px;
+}
+/*Модальное окно*/
+#modalWindow{
+	width: 360px;
+	height: 483px;
+	border-radius: 5px;
+	background-color: #eff3f7;
+	box-shadow: 0px 6px 13px rgba(13,16,7,.35);
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	font-family: 'fira_sansbook';
+	margin-top:  -260px;
+	margin-left: -150px;
+	display: none;
+	opacity: 0;
+	z-index: 100;
+}
+#modalWindow #modalClose {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	cursor: pointer;
+	display: block;
+	background-image: url(../images/button_close.png);
+}
+#overlay{
+	z-index: 50;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.7;
+	width: 100%; 
+	height: 100%;
+	top: 0; 
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+#modalWindow .addPro{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 12px 15px 8px;
+	background-color: #48cbe8;
+	font-family: 'fira_sansregular';
+	color: #FFF;
+	font-size: 25px;
+	border-bottom: solid 9px #67dffa;
+}
+#modalWindow .block{
+	margin-left: 21px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #959aa8;
+}
+#modalWindow input, textarea{
+	width: 320px;
+	height: 39px;
+	display: block;
+	background-color: #fbfcfd;
+	border: solid 1px #48cbe8;
+	border-radius: 3px;
+	margin-top: 3px;
+}
+#modalWindow textarea{
+	min-width: 320px;
+	min-height: 111px;
+	resize: none;
+	overflow: hidden;
+}
+#modalWindow button{
+	width: 137px;
+	height: 31px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: #FFF;
+	margin-left: 115px;
+	margin-top: 3px;
+	padding-left: 22px;
+	padding-right: 22px;
+	background-color: #48cbe8;
+	border-radius: 3px;
+	border: solid 1px #48cbe8;
+	box-shadow: 0px 2px 0px #3ba8c0;
+}
+#modalWindow button:hover{
+	box-shadow: none;
+}
+#modalWindow button:active{
+	box-shadow: 0px -2px 0px #3ba8c0;
+}
+#modalWindow button:active{
+	box-shadow: 0px -2px 0px #687b8f;
+}
+#modalWindow .file_input_box input{
+	overflow: hidden;
+}
+#modalWindow .file_input_box{
+	position: absolute;
+	left: 290px;
+	top: 161px;
+	width: 53px;
+	height: 41px;
+	background: url(../images/button_file.png) no-repeat;
+	background-position: 50% 50%;
+	background-color: #48cbe8;
+	border: solid 1px #48cbe8;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#modalWindow .file_input_text{
+	width: 268px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+}
+#modalWindow .file_input{
+	width: 51px;
+	height: 41px;
+	cursor: pointer;
+	position: absolute;
+	top: 159px;
+	left: 290px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#modalWindow input[placeholder], textarea[placeholder]{
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	color: #5acee9;
+	text-indent: 5px;
+}

@@ -1,0 +1,176 @@
+body{
+	background-color: #eff3f7;
+}
+.header, .footer{
+	width: 1200px;
+	margin: auto;	
+}
+.header{
+	height: 56px;
+	padding: 30px 100px;
+}
+.footer{
+	 height: 48px;
+	 padding-top: 30px;
+	 font-family: 'fira_sanslight';
+	 font-size: 13px;
+	 text-align: center;
+}
+.line_color{
+	width: 1400px;
+	margin: auto;
+	height: 3px;
+	background: -webkit-linear-gradient(right, #eff3f7 0%,#1c667a 50%,#eff3f7 100%);
+	background: -moz-linear-gradient(right, #eff3f7 0%,#1c667a 50%,#eff3f7 100%);
+	background: -o-linear-gradient(right, #eff3f7 0%,#1c667a 50%,#eff3f7 100%);
+	background: -ms-linear-gradient(right, #eff3f7 0%,#1c667a 50%,#eff3f7 100%);
+	background: linear-gradient(right, #eff3f7 0%,#1c667a 50%,#eff3f7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eff3f7', endColorstr='#1c667a', startColorstr='#1c667a', endColorstr='#eff3f7', GradientType=1);
+	clear: both;	
+}
+.background{
+	background-image: url('../images/comppattern2.png');
+}
+.content{
+	width: 960px;
+	min-height: 839px;
+	margin: auto;
+	padding: 39px 0px;
+}
+/*Навигационная панель*/
+.aside{
+	width: 250px;
+	height: 398px;
+	float: left;
+	font-family: 'fira_sansbook';
+}
+.aside .main_menu{
+	padding: 0;
+	height: 219px;
+	list-style-type: none;
+	background-color: #eff3f7;
+	border-radius: 5px;
+}
+.aside .main_menu li{
+	height: 50px;
+	padding-top: 23px;
+	font-size: 21px;
+	text-indent: 28px;
+}
+.aside .main_menu span{
+	display: inline-block;
+	width: 230px;
+	height: 2px;
+	margin-top: 25px;
+	margin-left: 10px;
+	background-color: #3ba8c0;
+}
+.aside .main_menu a{
+	color: #959aa8;
+	text-decoration: none;
+}
+.aside .main_menu a:hover{
+	color: #3ba8c0;
+}
+/*Панель контакты*/
+.aside .contacts{
+	height: 160px;
+	margin-top: 25px;
+	padding: 0;
+	border-radius: 5px;
+	list-style-type: none;
+	background-color: #3ba8c0;
+}
+.aside .contacts li{
+	height: 30px;
+	padding-top: 10px;
+	font-size: 21px;
+	color: #fbfcfd;
+	text-indent: 21px;	
+}
+.aside .contacts img{
+	float: left;
+	margin-left: 40px;
+}
+.aside .contacts li a{
+	display: block;
+	margin-top: 3px;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px;
+	text-indent: 10px;
+}
+.aside .contacts li a:hover{
+	text-decoration: underline;
+}
+.aside .contacts .mail{
+	background-color: #41b9d4;
+}
+.aside .contacts .tel{
+	background-color: #48cbe8;
+}
+.aside .contacts .skype{
+	background-color: #51daf8;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/*Иконки социальных сетей*/
+.header img{
+	float: left;
+}
+.navlist{
+	margin-top: 5px;
+	position: relative;
+	float: right;
+}
+.navlist li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 0;
+}
+.navlist li, .navlist a{
+	display: block;
+	height: 47px;
+}
+.github{
+	right: 0px;
+	width: 47px;
+	background: url('../images/github.png');
+}
+.facebook{
+	right: 71px;
+	width: 47px;
+	background: url('../images/facebook.png');
+}
+.twitter{
+	right: 142px;
+	width: 47px;
+	background: url('../images/twitter.png');
+}
+.navlist li.vkontakte{
+	right: 213px;
+	width: 46px;
+	height: 46px;
+	background: url('../images/vk.png');
+}
+.github a:hover{
+	background: url('../images/github_hover.png');
+}
+.facebook a:hover{
+	background: url('../images/facebook_hover.png');
+}
+.twitter a:hover{
+	background: url('../images/twitter_hover.png');
+}
+.vkontakte a:hover{
+	height: 46px;
+	background: url('../images/vk_hover.png');
+}
+/*Работа с контентом*/
+.article{
+	width: 650px;
+/*	height: 839px;*/
+	float: right;
+}
