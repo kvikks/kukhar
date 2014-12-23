@@ -1,4 +1,7 @@
 /*Изменяющаяся часть на каждой странице*/
+.article{
+	margin-bottom: 15px;
+}
 .aside .main_menu .first{
 	height: 50px;
 	border-top-left-radius: 5px;
@@ -8,60 +11,66 @@
 }
 /***************************************/
 /*Блок основной информации*/
-.article .basic, .exp{
+.article .basic{
 	background-color: #eff3f7;
 	border-radius: 5px;	
-}
-.article .basic{
-	height: 324px;
 	margin-bottom: 25px;
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	color: #37424d;
+	padding-bottom: 20px;	
 }
 .article .title{
 	display: inline-block;
 	float: left;
 	padding: 18px;
-	font-family: 'fira_sansbook';
 	font-size: 27px;
 	color: #3ba8c0;
 	border-bottom: solid 2px #3ba8c0;
 	margin-bottom: 20px;
 }
-.article .after{
-	content: ".";
+.article .clearfix{
 	height: 0;
 	clear: both;
 	visibility: hidden;
 }
-.basic img{
+.basic .photo{
+	display: block;
 	float: left;
 	margin-left: 21px;
 	margin-right: 38px;
 	width: 199px;
 	height: 198px;
 }
-.basic .text{
-	font-family: 'fira_sansbook';
-	font-size: 15px;
-	color: #37424d;
-	line-height: 37px;
+.basic .bText{
+	line-height: 37px;	
 }
-.basic .text span{
+.basic .bText span{
 	font-family: 'fira_sansmedium';
 	font-size: 17px;
 	color: #4a545d;
-	margin-right: 8px;
+	margin-right: 8px;	
+}
+.basic .img{
+	display: block;
+	float: left;
+	margin-left: 65px;
+	margin-right: 31px;
 }
 .basic .skill{
 	float: left;
 }
 .basic ul{
+	width: 200px;
+	padding: 0;
 	list-style-type: none;
-	font-family: 'fira_sansbook';
+	posistion: relative;
+	margin-left: 425px;
 }
 .basic ul li{
 	display: inline-block;
 	height: 17px;
-	margin-left: 10px;
+	margin-right: 10px;
 	margin-top: 10px;
 	padding-top: 2px;
 	padding-left: 15px;
@@ -72,35 +81,19 @@
 	font-size: 14px;
 	color: #FFF;
 }
-/*Опыт работы и образование*/
-.article .exp{
-	height: 234px;
-	margin-bottom: 24px;
+.basic .course{
+	margin-left: 71px;
+	margin-right: 39px;	
 }
-.article .exp .title{
-/*	width: 172px;*/
-	margin-bottom: 35px;
-}
-.exp img{
-	float: left;
-	margin-left: 65px;
-	margin-right: 31px;	
-}
-.exp p{
-	font-family: 'fira_sansbook';
+.basic .bExp{
 	font-size: 17px;
 	color: #4a545d;	
 }
-.exp span{
+.basic .bExp_l{
 	font-family: 'fira_sanslight';
 	font-size: 15px;
 	color: #687078;
 }
-.exp .text{
-	margin-bottom: 25px;
-}
-/*Образование*/
-.exp .course{
-	margin-left: 71px;
-	margin-right: 39px;	
+.basic .bExp_btm{
+	margin-bottom: 35px;
 }

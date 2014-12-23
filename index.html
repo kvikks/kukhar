@@ -9,9 +9,10 @@
 <link rel="stylesheet" type="text/css" href="styles/fonts.css">
 <link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
-
 <body>
+<div class="wrapper">
 	<div class="header">
+      <div class="header-content">
 		<a href="http://loftschool.ru/" target="_blank"><img src="images/logo.png" alt="Loftschool"></a>
 		<ul class="navlist">
 			<li class="vkontakte"><a href="https://vk.com/victoria_sheldon_cooper" target="_blank"></a></li>
@@ -19,10 +20,10 @@
 			<li class="facebook"><a href="#" title="Не пользуюсь Facebook"></a></li>
 			<li class="github"><a href="https://github.com/kvikks" target="_blank"></a></li>
 		</ul>
+       </div>
+    <div class="line_color"></div>   
 	</div>
-    <div class="line_color"></div>
-    <div class="background">
-    	<div class="content">
+    <div class="content">
 			<div class="aside">
             	<ul class="main_menu">
                 	<a href="index.html"><li class="first">Обо мне</li></a>
@@ -38,28 +39,34 @@
             </div>
 			<div class="article">
             	<div class="basic">
-            		<p class="title">Основная информация</p><p class="after"></p>
-               		<img src="images/photo.png" alt="Фотография">
-                	<p class="text"><span>Меня зовут: </span>Кухар Виктория Николаевна<br><span>Возраст: </span>24 года<br>
-                	<span>Город: </span>Бердичев, Украина<br><span>Специализация: </span>FRONTEND разработчик<br>
-                	<span class="skill">Ключевые навыки:</span><ul><li>html</li><li>css</li><li>javascript</li><li>jQuery</li></ul></p>
+            		<p class="title">Основная информация</p><p class="clearfix"></p>
+               		<img src="images/photo.png" alt="Фотография" class="photo">
+                	<p class="bText"><span>Меня зовут: </span>Кухар Виктория Николаевна</p>
+                    <p class="bText"><span>Возраст: </span>24 года</p>
+                	<p class="bText"><span>Город: </span>Бердичев, Украина</p>
+                    <p class="bText"><span>Специализация: </span>FRONTEND разработчик</p>
+                	<p class="skill bText"><span>Ключевые навыки:</span><ul><li>html</li><li>css</li><li>javascript</li><li>jQuery</li></ul></p>
             	</div>
-                <div class="exp">   
-                	<p class="title">Опыт работы</p><p class="after"></p>
-                	 <img src="images/work.png"><p class="text">&laquo;Первая украинская студия&raquo; - контент-менеджер<br><span>Март 2011 года</span></p>
-                 	 <img src="images/work.png"><p>Переводческая компания &laquo;InText&raquo; - DTP-специалист<br><span>Август 2012 года - по настоящее время</span></p>
+                <div class="basic">   
+                	<p class="title bExp_btm">Опыт работы</p><p class="clearfix"></p>
+                	 <img src="images/work.png" class="img">
+                     <p class="bExp">&laquo;Первая украинская студия&raquo; - контент-менеджер</p><p class="bExp_l bExp_btm">Март 2011 года</p>
+                 	 <img src="images/work.png" class="img">
+                     <p class="bExp">Переводческая компания &laquo;InText&raquo; - DTP-специалист</p><p class="bExp_l">Август 2012 года - по настоящее время</p>
                 </div>
-                <div class="exp">
-               	 	 <p class="title">Образование</p><p class="after"></p>
-                     <img src="images/edic.png"><p class="text">Оконченное высшее. НМетАУ (Днепропетровск)<br><span>Сентябрь 2007 - Июнь 2012</span></p>
-                     <img src="images/cour.png" class="course"><p>Курсы Loftschool.ru<br><span>Ноябрь 2014 - по настоящее время</span></p>
+                <div class="basic">
+               	 	 <p class="title bExp_btm">Образование</p><p class="clearfix"></p>
+                     <img src="images/edic.png" class="img">
+                     <p class="bExp">Оконченное высшее. НМетАУ (Днепропетровск)</p><p class="bExp_l bExp_btm">Сентябрь 2007 - Июнь 2012</p>
+                     <img src="images/cour.png" class="course img">
+                     <p class="bExp">Курсы Loftschool.ru</p><p class="bExp_l">Ноябрь 2014 - по настоящее время</p>
                 </div>
             </div>
-		</div>
-    </div> 
-    <div class="line_color"></div>
+		</div> 
 	<div class="footer">
+    	<div class="line_color"></div>
 		<p>© 2014. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 	</div>
+   </div> 
 </body>
 </html>

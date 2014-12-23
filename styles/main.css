@@ -1,23 +1,36 @@
 body{
-	background-color: #eff3f7;
-}
-.header, .footer{
-	width: 1200px;
-	margin: auto;	
+	width: 100%;
+	-moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+	background-image: url('../images/comppattern2.png');
 }
 .header{
-	height: 56px;
-	padding: 30px 100px;
+	width: 100%;
+	background-color: #eff3f7;
+	margin-bottom: 39px;
+}
+.header-content{
+	height: 116px;
+	margin: auto;
+}
+.header-content img{
+	margin-top: 30px;
+	margin-left: 100px;
 }
 .footer{
-	 height: 48px;
+	background-color: #eff3f7;
+	width: 100%;
+	min-height: 78px;
+	clear: both;
+}
+.footer p{
 	 padding-top: 30px;
 	 font-family: 'fira_sanslight';
 	 font-size: 13px;
 	 text-align: center;
 }
 .line_color{
-	width: 1400px;
 	margin: auto;
 	height: 3px;
 	background: -webkit-linear-gradient(right, #eff3f7 0%,#1c667a 50%,#eff3f7 100%);
@@ -28,14 +41,15 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eff3f7', endColorstr='#1c667a', startColorstr='#1c667a', endColorstr='#eff3f7', GradientType=1);
 	clear: both;	
 }
-.background{
-	background-image: url('../images/comppattern2.png');
+.wrapper{
+	width: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
 }
 .content{
 	width: 960px;
-	min-height: 839px;
 	margin: auto;
-	padding: 39px 0px;
 }
 /*Навигационная панель*/
 .aside{
@@ -115,11 +129,12 @@ body{
 	border-bottom-right-radius: 5px;
 }
 /*Иконки социальных сетей*/
-.header img{
+.header-content img{
 	float: left;
 }
-.navlist{
-	margin-top: 5px;
+.header-content .navlist{
+	margin-top: 35px;
+	margin-right: 100px;
 	position: relative;
 	float: right;
 }
@@ -171,6 +186,6 @@ body{
 /*Работа с контентом*/
 .article{
 	width: 650px;
-/*	height: 839px;*/
 	float: right;
+	margin-bottom: 40px;
 }
